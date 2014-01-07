@@ -29,8 +29,7 @@ html, body {height: 100%; width: 200%}
 .nextButton,.prevButton
 {
 	height: 100%;
-	width: 3%;
-	width: 3%;
+	width: 3%;;
 	position: absolute;
 	z-index: 2;
 	top: 0;
@@ -45,4 +44,12 @@ html, body {height: 100%; width: 200%}
 .prevButton
 {
 	background-color: red;
+}
+
+.contentFullPage
+{
+	margin-left: 3%;
+	margin-right: 3%;
+	background-color: white;
+	height: auto;
 }

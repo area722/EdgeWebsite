@@ -3,20 +3,7 @@ $(document).ready(init);
 function init()
 {
 	scroll();
-	
-
-	$('a[href^="#"]').on('click',function (e) {
-	    e.preventDefault();
-
-	    var target = this.hash,
-	    $target = $(target);
-
-	    $('html, body').stop().animate({
-	        'scrollLeft': $target.offset().left
-	    }, 900, 'swing', function () {
-	        window.location.hash = target;
-	    });
-	});
+	navButtons();
 }
 
 function scroll() {
@@ -30,14 +17,18 @@ function scroll() {
    });
 }
 
-function nextPageHandler(e)
+function navButtons()
 {
-	var target = this.hash,
-    $target = $(target);
+	$('a[href^="#"]').on('click',function (e) {
+		e.preventDefault();
 
-    $('html, body').stop().animate({
-        'scrollLeft': $target.offset().left
-    }, 900, 'swing', function () {
-        window.location.hash = target;
-    });
+		var target = this.hash,
+		$target = $(target);
+
+		$('html, body').stop().animate({
+		    'scrollLeft': $target.offset().left
+		}, 900, 'swing', function () {
+		    window.location.hash = target;
+		});
+	});
 }
