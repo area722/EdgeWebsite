@@ -4,6 +4,7 @@ function init()
 {
 	scroll();
 	navButtons();
+	headerHoverShow();
 }
 
 function scroll() {
@@ -31,4 +32,16 @@ function navButtons()
 		    window.location.hash = target;
 		});
 	});
+}
+
+function headerHoverShow () {
+	$("header").hover(hoverIn,HoverOut);
+	function hoverIn(e)
+	{
+		$("header").animate({"margin-top":"0%"},500);
+	}
+	function HoverOut (e) 
+	{
+		$("header").animate({"margin-top":"-2.8%"},500);
+	}
 }
