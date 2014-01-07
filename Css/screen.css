@@ -1,0 +1,48 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+/* horizontal scrolling */
+html, body {height: 100%; width: 200%}
+
+.fullpage {
+	border: 0px solid black;
+    width: 25%;
+    height: 100%;
+    float: left;
+}
+
+#p1 {background: #fcf;}
+#p2 {background: #ff0;}
+#p3 {background: green;}
+#p4 {background: blue;}
+
+.text
+{
+	width: 300px;
+	height: 300px;
+}
+
+/* pagebuttons */
+.nextButton,.prevButton
+{
+	height: 100%;
+	width: 3%;
+	width: 3%;
+	position: absolute;
+	z-index: 2;
+	top: 0;
+}
+
+.nextButton
+{
+	margin-left: 97%;
+	background-color: white;
+}
+
+.prevButton
+{
+	background-color: red;
+}
